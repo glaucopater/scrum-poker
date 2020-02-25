@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { SCCard } from "./styles";
-import logo from '../../assets/svg/logo.svg';
+import logo from '../../assets/img/logo-250.png';
 
 const Card = ({ value }) => {
   const [selected, setSelected] = useState(false);
