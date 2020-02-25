@@ -9,7 +9,7 @@ const Card = ({ value }) => {
   }
 
   return (
-    <SCCard className={"inside " + (selected ? "picked" : "")} onClick={handleOnClick}>
+    <SCCard className={(selected ? "picked" : "")} onClick={handleOnClick}>
       <div className="front">
         <span>{value}</span>
         <img src={logo} alt={"front"} />

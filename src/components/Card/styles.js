@@ -15,7 +15,6 @@ export const SCCard = styled.div`
 	-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 	transform-style: preserve-3d;
 	transition: .4s ease-in-out;
-
 	:hover {
 		box-shadow: 10px 10px 10px #00000050;
 	}
@@ -36,21 +35,17 @@ export const SCCard = styled.div`
 		left: 0;
 		width: 100%;
 		height: 100%;
-
 		display:flex;
 		flex-direction: column;
-
 		span {
 			padding: 8px;
 			:first-child {
 				align-self:flex-start;
 			}
-	
 			:last-child {
 				align-self:flex-end;
 			}
 		}
-		
 		img {
 			max-width: 100%;	
 			max-height: 100%;
@@ -62,7 +57,15 @@ export const SCCard = styled.div`
 	.front {
 		transform: rotateY(-180deg);
 		@include width(800px) {
-			padding: 5px;
+			padding: 8px;
+		}
+	}
+
+	&.picked  {
+		.back {
+			span {
+				opacity: 0;
+			}
 		}
 	}
 `;
